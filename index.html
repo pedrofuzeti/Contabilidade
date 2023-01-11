@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dev Contábil</title>
+  </head>
+  <body>
+    <div class="top">
+      <div class="header">
+        <h2 class="title-header">Dev Contábil</h2>
+        <a href="#h3-below" class="link-header">Quem somos</a>
+        <a href="#h2-meio"class="link-header">Serviços</a>
+        <a class="link-header" onclick="botaocontato()">Contato</a>
+    </div>
+
+      <h1>Dev Contábil</h1>
+    
+      <form id="form" action="https://formsubmit.co/pedro.fuzeti@hotmail.com" method="POST">
+        <h3 class="h3">Entre em contato</h3>
+        <label>
+          Nome
+          <input type="text" name="Nome" placeholder="Digite seu nome"  required/>
+        </label>
+        <label>
+          E-mail
+          <input type="E-mail" name="email" placeholder="seuemail@hotmail.com"  required />
+        </label>
+        <label>
+          Celular
+          <input type="tel" name="Celular" placeholder="Digite seu celular"  required />
+        </label>
+        <label>
+          Fale conosco
+          <textarea name="Dúvida" placeholder="Sua dúvida aqui"  required></textarea>
+        </label>
+        <button type="submit">Enviar</button>
+      </form>
+  
+    <h2 id="h2-meio">Nossos serviços</h2>
+
+    <div class="mid">
+
+      <div class="div-left">
+        <h4 class="title-left">Contabilidade Completa</h4>
+        <ul class="ul">
+          <li>Imposta de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+        </ul>
+      </div>
+
+      <div class="div-mid">
+        <h4 class="title-mid">Cuidamos do seu négocio</h4>
+        <ul class="ul">
+          <li>Imposta de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+        </ul>
+      </div>
+      <div class="div-right">
+        <h4 class="title-right">Cuidamos de você</h4>
+        <ul class="ul">
+          <li>Imposta de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="below">
+       
+      <h3 id="h3-below">Sobre Nós</h3>
+    
+    <div class="p-below">
+      <p>
+        Estamos presente no mercado há mais de 4 décadas auxiliando nossos
+        clientes nacionais e internacionais que já atuam ou desejam abrir seus
+        negócios e ingressar no Brasil. 
+        <br>
+        <br>
+        Assessoramos investidores que queiram
+        prospectar seus negócios no Brasil e investidores (“brasileiros”)
+        interessados em fazer negócios em outros países. 
+        <br>
+        Oferecemos “backoffice”
+        nas áreas Financeira, Recursos Humanos, Tributária e Contabilidade,
+        inclusive a abertura, legalização e regularização de empresas e
+        negócios. 
+        <br>
+        <br>
+        Com pesquisas de mercado, montamos toda estrutura
+        organizacional, ambiente operacional e logística de suas atividades, com
+        profissionais qualificados, competentes e continuamente treinados. 
+        <br>
+        <br>
+        Somos
+        especialistas em empresas tributadas pelo LUCRO REAL e Contabilidade em
+        IFRS. Assim, o Planejamento das Operações e suas consequências
+        tributárias passam a ser condições de competitividade, inclusive
+        sugerindo incorporação ou desmembramento de atividades.
+      </p>
+    </div>
+    </div>
+  </body>
+  <script>
+
+    let form = document.getElementById("form")
+
+    console.log(form)
+
+    function botaocontato(){
+      form.className = "mostrar-form"  
+      
+    }
+
+
+
+
+
+  </script>
+</html>
